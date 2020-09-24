@@ -1,0 +1,39 @@
+.image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  &:hover button {
+    opacity: 1;
+    transition: all 0.5s ease;
+    visibility: visible;
+  }
+  &:hover img {
+    filter: brightness(0.5);
+  }
+  &:hover p {
+    opacity: 0;
+  }
+  > img {
+    max-width: 300px;
+  }
+  > button {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+  }
+  > p {
+    position: absolute;
+    z-index: 1;
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    left: 0;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,38 @@
+.banner {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 136, 0, 0.397),
+      rgba(0, 128, 0, 0.315)
+    ),
+    url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding: 100px 0;
+  margin: 100px 0;
+  background-attachment: fixed;
+  &__content {
+    margin: 0 auto;
+    width: 50%;
+    max-width: 500px;
+    border: 5px solid white;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    p {
+      letter-spacing: 5px;
+      font-size: 1.5em;
+    }
+    h1 {
+      margin: 30px;
+      font-size: 3em;
+    }
+    > button {
+      background-color: white !important;
+      color: black !important;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+  }
+}

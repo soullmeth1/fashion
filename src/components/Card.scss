@@ -1,0 +1,20 @@
+.card {
+  text-align: center;
+  box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.575);
+  border-radius: 5px;
+  overflow: hidden;
+  img {
+    max-width: 300px;
+  }
+  &__detail {
+    padding: 10px;
+    p {
+      color: gray;
+      margin-bottom: 10px;
+    }
+    h4 {
+      font-weight: 700;
+      font-size: 1.3em;
+    }
+  }
+}
