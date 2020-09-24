@@ -1,3 +1,5 @@
+@import "./mixin";
+
 .collection {
   margin: 0 auto;
   padding: 100px 0;
@@ -6,6 +8,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include respond(phone) {
+    padding: 50px 0;
+    flex-direction: column;
+    width: 90%;
+  }
   &__img {
     display: flex;
     flex: 1;
@@ -37,11 +44,18 @@
     h1 {
       font-size: 3em;
       text-transform: uppercase;
+      @include respond(phone) {
+        font-size: 2em;
+        margin-top: 20px;
+      }
     }
     p {
       color: gray;
       line-height: 30px;
       margin: 30px 0;
+      @include respond(phone) {
+        margin: 10px 0;
+      }
     }
   }
 }

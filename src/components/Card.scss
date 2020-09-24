@@ -1,8 +1,14 @@
+@import "./mixin";
+
 .card {
   text-align: center;
   box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.575);
   border-radius: 5px;
   overflow: hidden;
+  @include respond(phone) {
+    overflow: unset;
+    margin: 0 10px;
+  }
   img {
     max-width: 300px;
   }

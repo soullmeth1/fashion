@@ -1,3 +1,5 @@
+@import "./mixin";
+
 .navbar {
   display: flex;
   align-items: center;
@@ -17,15 +19,33 @@
   }
   &__btn {
     display: none;
+    @include respond(phone) {
+      display: block;
+    }
   }
   &__logo {
     flex: 0.2;
     font-size: 1.4em;
+    @include respond(phone) {
+      flex: 1;
+      padding: 20px 0;
+    }
   }
   &__list {
     display: flex;
     list-style: none;
     flex: 1;
+    @include respond(phone) {
+      display: none;
+      position: absolute;
+      flex-direction: column;
+      top: 50px;
+      right: 0;
+      background-color: white;
+      width: 200px;
+      height: 100vh;
+      box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.425);
+    }
     li {
       padding: 20px;
       a {
@@ -33,6 +53,9 @@
         text-decoration: none;
         color: gray;
         font-weight: 500;
+        @include respond(phone) {
+          display: inline;
+        }
         &:hover {
           color: black;
           transition: all 0.2s ease;
@@ -45,6 +68,9 @@
     color: white;
     display: flex;
     align-items: center;
+    @include respond(phone) {
+      display: none;
+    }
     > *:not(:last-child) {
       margin-right: 20px;
     }

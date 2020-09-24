@@ -1,3 +1,5 @@
+@import "./mixin";
+
 .image {
   position: relative;
   display: flex;
@@ -5,6 +7,10 @@
   justify-content: center;
   margin: 10px;
   overflow: hidden;
+  @include respond(phone) {
+    overflow: unset;
+    scroll-snap-align: center;
+  }
   &:hover button {
     opacity: 1;
     transition: all 0.5s ease;

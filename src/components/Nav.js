@@ -8,11 +8,6 @@ function Nav() {
   return (
     <section>
       <nav className="navbar">
-        <div className="navbar__btn">
-          <button>
-            <MenuIcon />
-          </button>
-        </div>
         <div className="navbar__logo">
           <h1>FashionTrend.</h1>
         </div>
@@ -33,6 +28,9 @@ function Nav() {
         <div className="navbar__option">
           <SearchIcon />
           <ShoppingCartOutlinedIcon />
+        </div>
+        <div className="navbar__btn">
+          <MenuIcon />
         </div>
       </nav>
     </section>

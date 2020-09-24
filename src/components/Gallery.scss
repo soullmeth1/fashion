@@ -1,3 +1,5 @@
+@import "./mixin";
+
 .gallery {
   width: 90%;
   max-width: 1080px;
@@ -7,11 +9,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include respond(phone) {
+    padding: 50px 0;
+    align-items: stretch;
+  }
   &__title {
     h1 {
       font-size: 3em;
       margin-bottom: 30px;
       text-transform: uppercase;
+      @include respond(phone) {
+        font-size: 2em;
+      }
     }
   }
   &__body {
@@ -21,5 +30,16 @@
     justify-content: space-around;
     box-shadow: 2px 4px 15px -3px rgba(0, 0, 0, 0.39);
     padding: 10px 0;
+    @include respond(phone) {
+      flex-wrap: unset;
+      overflow-y: scroll;
+      justify-content: unset;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      padding: 10px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
   }
 }

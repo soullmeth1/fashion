@@ -1,3 +1,5 @@
+@import "./mixin";
+
 .header {
   width: 80%;
   max-width: 1680px;
@@ -6,17 +8,32 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include respond(phone) {
+    padding: 50px 0;
+    width: 90%;
+    position: relative;
+  }
   &__caption {
     // flex: 1;
     margin-right: 50px;
+    @include respond(phone) {
+      margin-right: 0;
+    }
     h1 {
       font-size: 4.2em;
       max-width: 550px;
       text-transform: uppercase;
+      @include respond(phone) {
+        font-size: 3em;
+        mix-blend-mode: soft-light;
+      }
     }
     h2 {
       color: var(--color-primary);
       font-size: 3em;
+      @include respond(phone) {
+        font-size: 2em;
+      }
     }
     p {
       margin-bottom: 30px;
@@ -30,8 +47,30 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include respond(phone) {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(190, 175, 155, 0.322),
+          transparent
+        ),
+        url("../images/fotoHeader.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      left: 30%;
+      height: 350px;
+      flex-direction: column;
+    }
     img {
       max-height: 450px;
+      @include respond(phone) {
+        display: none;
+        max-height: 350px;
+      }
     }
     p {
       max-width: 200px;
@@ -39,6 +78,9 @@
       margin-left: 20px;
       font-size: 1.2em;
       text-align: justify;
+      @include respond(phone) {
+        display: none;
+      }
     }
   }
 }

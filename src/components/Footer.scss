@@ -1,3 +1,5 @@
+@import "./mixin";
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -5,12 +7,21 @@
   width: 80%;
   max-width: 1680px;
   margin: 0 auto;
-
+  @include respond(phone) {
+    width: 90%;
+  }
   &__top {
     display: flex;
     justify-content: space-between;
+    @include respond(phone) {
+      flex-direction: column;
+    }
     div {
       align-self: flex-end;
+      @include respond(phone) {
+        align-self: auto;
+        margin-bottom: 20px;
+      }
       p {
         margin-bottom: 20px;
       }
@@ -18,14 +29,26 @@
         margin-right: 20px;
       }
     }
-    ul {
-      list-style: none;
-      li {
-        padding: 10px;
-      }
-      a {
-        text-decoration: none;
-        color: inherit;
+    article {
+      display: flex;
+      ul {
+        list-style: none;
+        @include respond(phone) {
+          flex: 0.5;
+        }
+        &:not(:last-child) {
+          margin-right: 50px;
+          @include respond(phone) {
+            margin-right: 0;
+          }
+        }
+        li {
+          padding: 10px 0;
+        }
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
       }
     }
   }

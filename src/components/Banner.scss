@@ -1,3 +1,5 @@
+@import "./mixin";
+
 .banner {
   background-image: linear-gradient(
       to bottom,
@@ -11,6 +13,10 @@
   padding: 100px 0;
   margin: 100px 0;
   background-attachment: fixed;
+  @include respond(phone) {
+    padding: 50px 0;
+    margin: 50px 0;
+  }
   &__content {
     margin: 0 auto;
     width: 50%;
@@ -19,13 +25,24 @@
     color: white;
     padding: 50px;
     text-align: center;
+    @include respond(phone) {
+      width: 90%;
+      padding: 10px;
+    }
     p {
       letter-spacing: 5px;
       font-size: 1.5em;
+      @include respond(phone) {
+        font-size: 1em;
+      }
     }
     h1 {
       margin: 30px;
       font-size: 3em;
+      @include respond(phone) {
+        font-size: 2em;
+        margin: 10px;
+      }
     }
     > button {
       background-color: white !important;
