@@ -5,4 +5,14 @@
   padding: 10px 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  cursor: pointer;
+  &:hover {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 174, 0, 0.568),
+      var(--color-primary)
+    );
+    color: white !important;
+    transition: all 0.1s;
+  }
 }
