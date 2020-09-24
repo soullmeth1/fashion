@@ -15,7 +15,8 @@ function Collection() {
           <h1>Explore our new collection</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            reiciendis obcaecati molestiae nemo doloribus tempore?
+            reiciendis obcaecati molestiae nemo doloribus tempore? Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit. Dicta, recusandae.
           </p>
           <Button name="Explore now" />
         </div>

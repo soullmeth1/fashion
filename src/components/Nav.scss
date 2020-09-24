@@ -10,8 +10,8 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 500px;
-    height: 90vh;
+    width: 40%;
+    height: 95vh;
     background-color: var(--color-primary);
     z-index: -1;
   }
@@ -20,6 +20,7 @@
   }
   &__logo {
     flex: 0.2;
+    font-size: 1.4em;
   }
   &__list {
     display: flex;
@@ -35,6 +36,7 @@
         &:hover {
           color: black;
           transition: all 0.2s ease;
+          box-shadow: 0px 2px 0 var(--color-primary);
         }
       }
     }

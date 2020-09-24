@@ -8,7 +8,12 @@ function Header() {
     <header>
       <div className="header">
         <div className="header__caption">
-          <h1>Fashion Trend on 2020</h1>
+          <h1>Fashion Trend</h1>
+          <h2>ON 2020.</h2>
+          <p>
+            Let's get fashionated with us. We will perform you to be better in
+            your life.
+          </p>
           <Button name="More details" />
         </div>
         <div className="header__img">

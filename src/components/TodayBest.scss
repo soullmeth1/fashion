@@ -14,7 +14,8 @@
     width: 100%;
     h1 {
       flex: 1;
-      font-size: 2em;
+      font-size: 3em;
+      text-transform: uppercase;
     }
     span {
       color: var(--color-primary);
@@ -23,6 +24,7 @@
   &__body {
     width: 100%;
     margin: 30px 0;
+    max-width: 1080px;
     display: flex;
     align-items: center;
     justify-content: space-between;

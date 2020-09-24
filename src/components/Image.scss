@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  margin: 10px;
+  overflow: hidden;
   &:hover button {
     opacity: 1;
     transition: all 0.5s ease;
@@ -11,12 +12,14 @@
   }
   &:hover img {
     filter: brightness(0.5);
+    transform: scale(1.2);
   }
   &:hover p {
     opacity: 0;
   }
   > img {
     max-width: 300px;
+    transition: all 0.2s ease;
   }
   > button {
     opacity: 0;
@@ -30,8 +33,9 @@
   > p {
     position: absolute;
     z-index: 1;
-    color: black;
-    background-color: white;
+    color: rgba(39, 37, 37, 0.74);
+    background-color: rgba(255, 221, 170, 0.63);
+    display: inline-block !important ;
     padding: 5px 10px;
     left: 0;
     bottom: 0;

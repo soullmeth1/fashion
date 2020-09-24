@@ -1,6 +1,6 @@
 .gallery {
   width: 90%;
-  max-width: 1680px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 100px 0;
   display: flex;
@@ -11,12 +11,14 @@
     h1 {
       font-size: 3em;
       margin-bottom: 30px;
+      text-transform: uppercase;
     }
   }
   &__body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    box-shadow: 2px 4px 15px -3px rgba(0, 0, 0, 0.39);
   }
 }
