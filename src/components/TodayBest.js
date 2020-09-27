@@ -3,9 +3,9 @@ import "./TodayBest.scss";
 import TrendingFlatIcon from "@material-ui/icons/TrendingFlat";
 import Button from "./Button";
 import Card from "./Card";
-import bs from "../images/bs.jpg";
-import bs1 from "../images/bs1.jpg";
-import bs2 from "../images/bs2.jpg";
+import bs from "../images/bs.webp";
+import bs1 from "../images/bs1.webp";
+import bs2 from "../images/bs2.webp";
 
 function TodayBest() {
   return (
