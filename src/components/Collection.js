@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import "./Collection.scss";
-import phback from "../images/phback.webp";
+import phback from "../images/phback.jpg";
 
 function Collection() {
   return (

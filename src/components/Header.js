@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.scss";
-import foto from "../images/fotoHeader.webp";
+import foto from "../images/fotoHeader.jpg";
 import Button from "./Button";
 
 function Header() {

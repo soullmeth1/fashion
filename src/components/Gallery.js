@@ -1,12 +1,12 @@
 import React from "react";
 import "./Gallery.scss";
 import Image from "./Image";
-import ph from "../images/ph.webp";
-import ph1 from "../images/ph1.webp";
-import ph2 from "../images/ph2.webp";
-import ph3 from "../images/ph3.webp";
-import ph4 from "../images/ph4.webp";
-import ph5 from "../images/ph5.webp";
+import ph from "../images/ph.jpg";
+import ph1 from "../images/ph1.jpg";
+import ph2 from "../images/ph2.jpg";
+import ph3 from "../images/ph3.jpg";
+import ph4 from "../images/ph4.jpg";
+import ph5 from "../images/ph5.jpg";
 
 function Gallery() {
   return (
